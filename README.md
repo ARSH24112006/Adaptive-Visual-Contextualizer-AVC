@@ -32,7 +32,7 @@ This method ensures the global hotkey listener and Windows PowerShell audio brid
 
 \# Clone the repository
 
-git clone https://github.com/ARSH24112006/Screen-AI-Assistant.git
+git clone https://github.com/ARSH24112006/Adaptive-Visual-Contextualizer-AVC.git
 
 cd Screen-AI-Assistant
 
@@ -62,7 +62,7 @@ Launch the script: python main.py
 
 
 
-Wait for the terminal to say "Brain loaded!" (The first run will download the model weights).
+Wait for the terminal to say "Brain loaded!" (The first run will download the model weights.After that the application runs completely offline).
 
 
 
@@ -150,7 +150,7 @@ docker run -it screen-ai-assistant
 
 ###### **a) The evdev Error:**
 
-Running keyboard listeners inside a slim Linux container is notoriously difficult. I solved this by including build-essential and linux-headers-generic in the Dockerfile to compile the necessary hardware drivers.
+Linux containers require additional packages to access input devices. The Dockerfile installs the necessary system libraries to allow pynput to compile correctly.
 
 ###### 
 
