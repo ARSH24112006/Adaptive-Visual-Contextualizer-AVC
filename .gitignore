@@ -1,0 +1,9 @@
+venv/
+model/
+*.bin
+*.safetensors
+build/
+dist/
+capture_*.png
+*.exe
+*.pkg
